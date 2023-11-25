@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.55 ;
+}
+#navbar{
+display: flex;
+align-items: center;
+ position:absolute;
+ top: 0px;
+}
+.item{
+    display: flex;
+    display: inline-block;
+    
+}
+.item a{
+text-decoration: none;
+padding: 3px 23px;
+margin: 34px;
+list-style: none;
+font-size: 1.3rem;
+border-radius: 20px;
+}
+#logo{
+    margin: 10px;
+}
+#logo img{
+    height: 60px;
+}
+
+.item a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+content: "";
+background: url('bg2.jpg') no-repeat center center/cover;
+position: absolute;
+height: 63%;
+width: 100%;
+z-index: -1;
+opacity: 0.89;
+}
+#home h1{
+    color: aliceblue;
+    text-align: center;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Sofia", sans-serif;
+
+}
+.btn{
+    margin: 15px;
+    padding: 7px 20px;
+    border: 2px solid rgb(245, 122, 122);
+    color: black;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 10px;
+    border-radius: 15px;
+    background-color: rgb(222, 220, 220);
+}
+#services .box img{
+height: 160px;
+margin: auto;
+display: block;
+}
+
+.center{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+
+}
