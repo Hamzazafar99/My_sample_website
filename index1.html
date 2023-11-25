@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first website </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="shortcut icon" href="img1.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Audiowide", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(img2.jpg);
+            color: aliceblue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+
+            margin: 93px 208px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        section::after {
+            content: " This is known as Website.";
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            position: sticky;
+            top: 0%;
+            text-shadow: 3px 4px 8px grey;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: yellow;
+
+            text-shadow: 3px 4px 8px rgb(248, 5, 5);
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        h1:hover {
+
+            color: rgb(156, 239, 181);
+            transform: scale(2);
+        }
+
+        .container {
+            display: flex;
+            color: rgb(255, 255, 255);
+
+        }
+
+        /* #box2,#box3,#box1{
+            color: rgb(255, 255, 255);
+        } */
+
+        .box {
+            border: 0px solid rgb(154, 0, 0);
+            padding: 23px 34px;
+            margin: 50px;
+            box-shadow: inset 10px 15px 10px rgb(113, 57, 57), inset 0px 0px 15px rgb(145, 97, 97);
+            text-shadow: 3px 4px 8px grey;
+        }
+
+        .box h2 {
+            color: black;
+            text-shadow: 3px 4px 8px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+                <li class="item"><a href="">Services</a></li>
+            </ul>
+            <section>
+                <h1>Welcome to my website </h1>
+                <p>A website is a collection of many web pages, and web pages are digital files that are written using
+                    HTML(HyperText Markup Language). To make your website available to every person in the world, it
+                    must be stored or hosted on a computer connected to the Internet round a clock. Such computers are
+                    known as a Web Server.
+
+                </p>
+            </section>
+
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>HTML</h2>
+            <p>HTML, in full hypertext markup language, a formatting system for displaying material retrieved over the
+                Internet. Each retrieval unit is known as a Web page (from World Wide Web), and such pages frequently
+                contain hypertext links that allow related pages to be retrieved.</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>CSS</h2>
+            <p>CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring
+                web pages (HTML or XML). This language contains coding elements and is composed of these “cascading
+                style sheets” which are equally called CSS files (. css).</p>
+        </div>
+        <div class="box" id="box3">
+            <h2>JAVASCRIPT</h2>
+            <p>JavaScript is a scripting language used to develop web pages. Developed in Netscape, JS allows developers
+                to create a dynamic and interactive web page to interact with visitors and execute complex actions. It
+                also enables users to load content into a document without reloading the entire page.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">So, Copyright meaning, acts as a protection to legally safeguard that original creation. The
+            copyright law states that a work is original if the author made it by thinking independently and not copying
+            it from somewhere. If you have that copyright to your product, no one can use or replicate your work.</div>
+    </footer>
+</body>
+
+</html>
